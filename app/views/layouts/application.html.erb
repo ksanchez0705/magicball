@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Ask the Magic 8 Ball</title>
+    <title>Splurty</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -8,13 +9,29 @@
   <body>
     <header class="row">
       <div class="col-3">
+            <%= link_to root_path do %>
+
+      
+                  <br />
         Ask the Magic Conch Shell
+                <br />
+
+
+
       </div>
-      <div class="col-4 slogan">
-        And it answers...
+          <% end %>
+
+  <div class="col-4 slogan">
+        And it answers:
+      </div>
+  <div class="col-5 links">
+        <%= link_to 'Add Your Customized Conch Shell Answers', new_suggestion_path %>
       </div>
     </header>
-<hr />
+    <hr  />
+
+    <br class="clear" />
+
     <%= yield %>
 
   </body>

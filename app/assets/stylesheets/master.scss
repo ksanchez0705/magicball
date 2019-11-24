@@ -2,9 +2,35 @@
 
 .slogan {
   color:#425df5;
+  font-size: 40px;
 }
 
 h1 {
   color:#425df5;
+  text-align: center;
+
 }
 
+.clear {
+  clear: both;
+}
+
+
+.links a {
+  color:black;
+  font-size: 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.links {
+  padding-top: 26px;
+  color: grey;
+}
+
+header {
+  border-top: 9px solid #222222;
+}
+
+hr {
+  clear:both;
+}
