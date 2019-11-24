@@ -1,15 +1,21 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Magic8ball</title>
+    <title>Ask the Magic 8 Ball</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <header class="row">
+      <div class="col-3">
+        Ask the Magic Conch Shell
+      </div>
+      <div class="col-4 slogan">
+        And it answers...
+      </div>
+    </header>
+<hr />
     <%= yield %>
+
   </body>
 </html>
